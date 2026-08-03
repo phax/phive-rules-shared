@@ -92,6 +92,20 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>com.helger.cii</groupId>
+        <artifactId>ph-cii-parent-pom</artifactId>
+        <version>4.1.2</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.helger.ubl</groupId>
+        <artifactId>ph-ubl-parent-pom</artifactId>
+        <version>10.2.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -103,6 +117,47 @@
     <dependency>
       <groupId>com.helger.phive</groupId>
       <artifactId>phive-xml</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.helger.cii</groupId>
+      <artifactId>ph-cii-d16b</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.cii</groupId>
+      <artifactId>ph-cii-d22b</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl20</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl21</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl22</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl23</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl24</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.ubl</groupId>
+      <artifactId>ph-ubl25</artifactId>
+      <optional>true</optional>
     </dependency>
 
     <dependency>

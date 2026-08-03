@@ -17,7 +17,8 @@ This project holds the **shared registration SPI and helper classes** used acros
 * `PhiveRulesInitializationException` - thrown when a prerequisite VES is missing.
 * `PhiveRulesTestHelper` - test utilities (`isContentCorrect`) used by every rule module's tests.
 
-The dependencies are deliberately minimal: `slf4j-api` + `phive-xml` (which transitively brings in ph-commons, ph-diver and ph-schematron). This library has **no** dependency on any document-binding library.
+The dependencies are deliberately minimal: `slf4j-api` + `phive-xml` (which transitively brings in ph-commons, ph-diver and ph-schematron).
+This library has **no** dependency on any document-binding library.
 
 This project is part of my Peppol solution stack. See https://github.com/phax/peppol for other components and libraries in that area.
 

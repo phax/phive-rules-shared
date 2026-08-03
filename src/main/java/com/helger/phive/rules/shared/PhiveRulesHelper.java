@@ -27,6 +27,7 @@ import com.helger.phive.api.executorset.IValidationExecutorSetRegistry;
 import com.helger.phive.api.source.IValidationSource;
 import com.helger.phive.xml.schematron.SchematronNamespaceBeautifier;
 import com.helger.phive.xml.schematron.ValidationExecutorSchematron;
+import com.helger.phive.xml.schematron.ValidationExecutorSchematronBuilder;
 import com.helger.xml.namespace.IIterableNamespaceContext;
 
 /**
@@ -45,7 +46,7 @@ public final class PhiveRulesHelper
                                                          @Nullable final IIterableNamespaceContext aNsCtx)
   {
     SchematronNamespaceBeautifier.addMappings (aNsCtx);
-    return ValidationExecutorSchematron.createXSLT (aRes, null, aNsCtx);
+    return ValidationExecutorSchematronBuilder.xslt2 (aRes).namespaceContext (aNsCtx).build ();
   }
 
   @NonNull

@@ -36,13 +36,13 @@ import com.helger.phive.xml.source.IValidationSourceXML;
  * {@link java.util.ServiceLoader} mechanism and registers their validation execution sets into a
  * provided registry.
  * <p>
- * As the SPI load order is not deterministic, an implementation is only invoked once all coordinates
- * from its {@link IValidationRulesRegistrarSPI#getAllPrerequisites()} are present in the registry.
- * An implementation whose prerequisites are not yet present is pushed to the end of the work list and
- * retried in a later round, after other implementations had the chance to register those
- * prerequisites. If a full round passes without any progress (i.e. every remaining implementation is
- * still missing a prerequisite), the remaining prerequisites are considered unresolvable and an
- * {@link IllegalStateException} is thrown.
+ * As the SPI load order is not deterministic, an implementation is only invoked once all
+ * coordinates from its {@link IValidationRulesRegistrarSPI#getAllPrerequisites()} are present in
+ * the registry. An implementation whose prerequisites are not yet present is pushed to the end of
+ * the work list and retried in a later round, after other implementations had the chance to
+ * register those prerequisites. If a full round passes without any progress (i.e. every remaining
+ * implementation is still missing a prerequisite), the remaining prerequisites are considered
+ * unresolvable and an {@link IllegalStateException} is thrown.
  *
  * @author Philip Helger
  */

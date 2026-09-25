@@ -46,7 +46,7 @@ public final class PhiveRulesTestHelper
     final IValidationArtefact aVA = aVE.getValidationArtefact ();
     final IReadableResource aRes = aVA.getRuleResource ();
 
-    if (aVA.getValidationType () == EValidationType.XSD)
+    if (aVA.getValidationType () == EValidationType.XSD || aVA.getValidationType () == EValidationType.PARTIAL_XSD)
     {
       // Don't check XSD, because the dependency list will is not correctly
       // available
